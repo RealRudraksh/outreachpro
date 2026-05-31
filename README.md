@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="./frontend/public/banner.png" alt="OutreachPro Banner" width="100%">
+</p>
+
+<br/>
+
 # OutreachPro 🚀
 
 **OutreachPro** is a modern, zero-infrastructure cold email and automated lead generation platform designed for full-stack developers, creators, and professionals. By eliminating complex server management and utilizing a decentralized **Bring Your Own Key (BYOK)** model, the platform allows you to scrape highly targeted leads across multiple platforms, personalize communications instantly using a smart AI copywriter, and securely queue delivery via your own Gmail SMTP pipeline.
@@ -42,24 +48,36 @@ OutreachPro/
 │   └── package.json      # Client-side dependency tree
 └── backend/              # Node.js automation pipeline (Coming Soon)
     └── index.js          # Express app routing and web-scraping logic
+```
+## 🎯 Use Cases
+- Internship hunting
+- Job applications
+- Freelance client outreach
+- Startup lead generation
+- Recruitment prospecting
+- Business development
 
-🚀 Quick Start (Local Setup)
+## 🚀 Quick Start (Local Setup)
 To spin up the user interface workspace locally on your device:
 
 1. Clone the repository:
+<br/>
     git clone [https://github.com/RealRudraksh/OutreachPro.git](https://github.com/RealRudraksh/OutreachPro.git)
     cd OutreachPro
 
 2. Navigate to the frontend environment:
+    <br/>
     cd frontend
     
 3. Install the unified v4 compiler plugin dependencies:
+    <br/>
     npm install
 
 4. Launch the development workspace server:
+    <br/>
     npm run dev
 
-5. Open your local browser to the clickable port link provided in your terminal   (usually http://localhost:5173/).
+5. Open your local browser to the clickable port link provided in your terminal (usually http://localhost:5173/).
 
 ## 👨‍💻 Developer Profile
 
