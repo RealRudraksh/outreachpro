@@ -61,8 +61,9 @@ OutreachPro/
 To spin up the user interface workspace locally on your device:
 
 1. Clone the repository:
-<br/>
-    git clone [https://github.com/RealRudraksh/OutreachPro.git](https://github.com/RealRudraksh/OutreachPro.git)
+    <br/>
+    git clone [https://github.com/RealRudraksh/OutreachPro.git](https://github.com/RealRudraksh/outreachpro.git)
+    <br/>
     cd OutreachPro
 
 2. Navigate to the frontend environment:
