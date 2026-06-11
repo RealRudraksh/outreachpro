@@ -103,7 +103,7 @@ function App() {
     
     setIsGeneratingAi(true);
     try {
-      const response = await fetch('http://outreachpro.onrender.com/api/generate-template', {
+      const response = await fetch('https://outreachpro.onrender.com/api/generate-template', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt: aiPrompt })
@@ -154,7 +154,8 @@ function App() {
         formData.append('resume', resumeFile); 
       }
 
-      const response = await fetch('http://outreachpro.onrender.com/api/execute-pipeline', {
+      //  PROTOCOL HOTFIX: Upgraded endpoint communication to secure HTTPS layer
+      const response = await fetch('https://outreachpro.onrender.com/api/execute-pipeline', {
         method: 'POST',
         body: formData
       });
