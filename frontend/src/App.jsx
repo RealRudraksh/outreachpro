@@ -103,7 +103,7 @@ function App() {
     
     setIsGeneratingAi(true);
     try {
-      const response = await fetch('http://localhost:5000/api/generate-template', {
+      const response = await fetch('http://outreachpro.onrender.com/api/generate-template', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt: aiPrompt })
@@ -154,7 +154,7 @@ function App() {
         formData.append('resume', resumeFile); 
       }
 
-      const response = await fetch('http://localhost:5000/api/execute-pipeline', {
+      const response = await fetch('http://outreachpro.onrender.com/api/execute-pipeline', {
         method: 'POST',
         body: formData
       });
