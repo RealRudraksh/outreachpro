@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a1520;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rocketGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff3cac;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7b4fff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4facff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9a3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff3cac;stop-opacity:0.6" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="0.8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark circular background -->
+  <circle cx="16" cy="16" r="15.5" fill="url(#bgGrad)" />
+
+  <!-- Rocket body - tilted ~35deg, pointing top-right -->
+  <g transform="translate(16,16) rotate(-35) translate(-16,-16)" filter="url(#glow)">
+    <!-- Flame / exhaust -->
+    <ellipse cx="14.5" cy="23.5" rx="2.2" ry="3.5" fill="url(#flameGrad)" opacity="0.9"/>
+    <ellipse cx="14.5" cy="24.8" rx="1.3" ry="2" fill="#fff" opacity="0.5"/>
+
+    <!-- Rocket body -->
+    <path d="M14.5 8 C12 10.5 11 14 11 17.5 L11 21 Q14.5 22.5 18 21 L18 17.5 C18 14 17 10.5 14.5 8Z"
+          fill="url(#rocketGrad)" />
+
+    <!-- Nose cone -->
+    <path d="M14.5 8 C13.5 8 12.5 9 12 10 C13 9.5 14.5 9 14.5 9 C14.5 9 16 9.5 17 10 C16.5 9 15.5 8 14.5 8Z"
+          fill="white" opacity="0.9"/>
+
+    <!-- Window -->
+    <circle cx="14.5" cy="15.5" r="2" fill="#0d1b2e" stroke="white" stroke-width="0.5" opacity="0.85"/>
+    <circle cx="14.5" cy="15.5" r="1.1" fill="#7b4fff" opacity="0.7"/>
+
+    <!-- Left fin -->
+    <path d="M11 19 L8.5 22 L11 21 Z" fill="url(#rocketGrad)" opacity="0.85"/>
+    <!-- Right fin -->
+    <path d="M18 19 L20.5 22 L18 21 Z" fill="url(#rocketGrad)" opacity="0.85"/>
+  </g>
+</svg>
